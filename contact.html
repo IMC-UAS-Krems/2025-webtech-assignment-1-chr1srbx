@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cebotaru Cristian</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles for the contact form -->
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 40px auto 0 auto; 
+            padding-top: 40px;
+            border-top: 1px solid #333;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #e0e0e0;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: #252525;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: #e0e0e0;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            background-color: #00ADB5;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-btn:hover {
+            background-color: #00c5cf;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <!-- 1. The hidden checkbox -->
+            <input type="checkbox" id="menu-toggle" class="mobile-menu-checkbox">
+            
+            <!-- 2. The button (which is now a label for the checkbox) -->
+            <label for="menu-toggle" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- 3. The menu -->
+            <div class="nav-links-wrapper">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+            <p>You can find me on the following platforms. Feel free to reach out!</p>
+
+            <a href="https://github.com/chr1srbx" target="_blank">
+                <article class="card clickable">
+                    <h3>GitHub</h3>
+                    <p>View my projects and contributions.</p>
+                </article>
+            </a>
+            
+            <a href="https://www.instagram.com/chrisss.c_/" target="_blank">
+                <article class="card clickable">
+                    <h3>Instagram</h3>
+                    <p>Connect with me on Instagram.</p>
+                </article>
+            </a>
+
+            <a href="mailto:cebotarucristianmd@gmail.com">
+                <article class="card clickable">
+                    <h3>Email</h3>
+                    <p>Send me an email directly at cebotarucristianmd@gmail.com.</p>
+                </article>
+            </a>
+
+            <form action="#" class="contact-form">
+                <h3 style="text-align: center; margin-bottom: 25px;">Or Send a Message</h3>
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 Cebotaru Cristian. All rights reserved.</p>
+    </footer>
+</body>
+</html>

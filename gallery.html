@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Cebotaru Cristian</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <!-- 1. The hidden checkbox -->
+            <input type="checkbox" id="menu-toggle" class="mobile-menu-checkbox">
+            
+            <!-- 2. The button (which is now a label for the checkbox) -->
+            <label for="menu-toggle" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- 3. The menu -->
+            <div class="nav-links-wrapper">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="gallery" class="content-section">
+            <h2>My Gallery</h2>
+            <p>A collection of photos from the site and some random from my gallery.</p>
+            <div class="gallery-grid">
+                <img src="https://cdn.discordapp.com/attachments/559752558038614029/1435628859868582081/image.png?ex=690ca910&is=690b5790&hm=fcd7dc9a4265d83900420c15b63dc609d711f196903274dfbf969911ecc1cd21&" alt="Gallery image 1">
+                <img src="https://cdn.discordapp.com/attachments/559752558038614029/1435629411910160555/image.png?ex=690ca994&is=690b5814&hm=7a8075cbd14bb9d8310272f26c1675c5f0e833e42ba2a1c6b6fc9ac131422724&" alt="Gallery image 2">       
+                <img src="https://tr.rbxcdn.com/180DAY-1aed714cf75235185cb7b4cab1dd68ed/768/432/Image/Webp/noFilter" alt="Gallery image 3">
+                <img src="images/pic4.jpg" alt="Gallery image 4">
+                <img src="images/pic5.jpg" alt="Gallery image 5">
+                <img src="images/pic6.jpg" alt="Gallery image 6">
+                <img src="images/pic7.jpg" alt="Gallery image 7">
+                <img src="images/pic8.jpg" alt="Gallery image 8">
+                <img src="images/pic9.jpg" alt="Gallery image 9">
+                <img src="images/pic10.jpg" alt="Gallery image 10">
+                <img src="images/pic11.jpg" alt="Gallery image 11">
+                <img src="images/pic12.jpg" alt="Gallery image 12">
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 Cebotaru Cristian. All rights reserved.</p>
+    </footer>
+</body>
+</html>

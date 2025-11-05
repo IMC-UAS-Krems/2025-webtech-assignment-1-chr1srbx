@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cebotaru Cristian - Profile</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* To keep the size equal for each card*/
+        .explore-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            align-items: stretch; 
+        }
+
+        .explore-grid a {
+            display: flex;
+            text-decoration: none;
+        }
+        
+        .explore-grid .card {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container nav-container">
+            <!-- 1. The hidden checkbox -->
+            <input type="checkbox" id="menu-toggle" class="mobile-menu-checkbox">
+            
+            <!-- 2. The button (which is now a label for the checkbox) -->
+            <label for="menu-toggle" class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <!-- 3. The menu -->
+            <div class="nav-links-wrapper">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Me</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="hero">
+            <h1>Cebotaru Cristian</h1>
+            <p class="subtitle">Software Developer & Reverse Engineer</p>
+        </header>
+
+        <section id="welcome" class="content-section" style="text-align: center; border: none; padding-top: 20px;">
+            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+                Welcome to my personal website. I'm a developer passionate about reverse engineering and game development. Here you can explore my projects, professional skills, and personal interests.
+            </p>
+        </section>
+
+        <section id="explore" class="content-section">
+            <h2 style="text-align: center; border-bottom: none; margin-bottom: 40px;">Explore My Site</h2>
+            <div class="explore-grid">
+                
+                <a href="cv.html">
+                    <article class="card clickable">
+                        <h3>My CV & Projects</h3>
+                        <p>See my full list of projects, technical skills, and achievements.</p>
+                    </article>
+                </a>
+
+                <a href="about.html">
+                    <article class="card clickable">
+                        <h3>About Me</h3>
+                        <p>Learn more about my background, personal journey, and hobbies.</p>
+                    </article>
+                </a>
+
+                <a href="gallery.html">
+                    <article class="card clickable">
+                        <h3>Photo Gallery</h3>
+                        <p>A collection of photos from the site and some random from my gallery.</p>
+                    </article>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>&copy; 2025 Cebotaru Cristian. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
